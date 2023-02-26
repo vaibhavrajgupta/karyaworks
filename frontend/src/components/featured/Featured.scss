@@ -1,0 +1,92 @@
+.featured{
+    height: 41vh;
+    display: flex;
+    justify-content: center;
+    background-color: #5689c0;
+    color: white;
+
+    .container{
+        width: 94vw;
+        display: flex;
+        align-items: center;
+
+        .left{
+            display: flex;
+            flex-direction: column;
+            gap: 3vh;
+
+            h1{
+                font-size: 3.5vw;
+
+                i{
+                    font-weight: 300;
+                }
+            }
+
+            .search{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: white;
+                border-radius: 1.4vw;
+                padding-right: .01vw;
+                overflow: hidden;
+                width: 50vw;
+                .searchInput{
+                    display: flex;
+                    align-items: center;
+                    gap: .3vw;
+                    img{
+                        width: 1.5vw;
+                        height: 1.5vw;
+                        margin: 1vw;
+                    }
+
+                    input{
+                        border: none;
+                        outline: none;
+                        width: 36.5vw;
+                        height: 6vh;
+                    }
+                }
+
+                button{
+                    // border-radius: 1.4vw;
+                    width: 8.3vw;
+                    height: 6.1vh;
+                    border: none;
+                    background-color: #75e2ff;
+                    color: white;
+                    cursor: pointer;
+                    margin-left: 1vw;
+                }
+            }
+
+            .popular{
+                display: flex;
+                align-items: center;
+                gap: .8vw;
+
+                span{}
+                button{
+                    color: white;
+                    background-color: transparent;
+                    border: .1vw solid white;
+                    padding: .5vh .8vw;
+                    border-radius: 2vw;
+                    font-size: .94vw;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .right{
+            height: 100%;
+
+            img{
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}

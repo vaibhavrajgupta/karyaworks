@@ -1,0 +1,82 @@
+.home{
+    .features{
+        background-color: #f1fdf7;
+        display: flex;
+        align-items: center;
+        padding: 8vh 5vw;
+
+        .container{
+            gap: 5vw;
+            display: flex;
+            width: 94vw;
+            align-items: center;
+            justify-content: space-between;
+            .item{
+                display: flex;
+                flex-direction: column;
+                gap: 1vw;
+
+                h1{
+                    font-weight: 500;
+                    margin-bottom: 1.5vh;
+                }
+                p{
+                    font-size: 1.4vw;
+                    font-weight: 300;
+                    line-height: 3.4vh;
+                    letter-spacing: .13vw;
+                }
+
+                .title{
+                    display: flex;
+                    align-items: center;
+                    gap: .7vw;
+                    font-size: 1.3vw;
+                    font-weight: 500;
+                    color: gray;
+
+                    img{
+                        height: 1.5vw;
+                        width: 1.5vw;
+                    }
+                }
+
+                video{
+                    width: 40vw;
+                }
+            }
+        }
+
+        &.dark{
+            background-color: #0d084d;
+            h1{
+                color: white !important;
+            }
+            p{
+                color: white !important;
+                margin-bottom: 2vh !important;
+            }
+            .title{
+                color: white !important;
+                font-weight: 300 !important;
+                font-size: 1.1vw !important;
+            }
+
+            img{
+                width: 100% ;
+            }
+
+            button{
+                background-color: #1dbf73;
+                color: white;
+                padding: 1.4vh 2vw;
+                border-radius: .2vw;
+                font-size: 1.1vw;
+                cursor: pointer;
+                margin-top: 3.5vh;
+                border: none;
+                width: max-content;
+            }
+        }
+    }
+}
